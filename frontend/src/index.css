@@ -1,0 +1,201 @@
+@import "tailwindcss";
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(.95);
+  }
+
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+/* Navbar Underline Animation */
+
+.nav-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  width: 0;
+  height: 2px;
+  background: linear-gradient(to right, #ec4899, #fb7185);
+  transition: width 0.35s ease;
+}
+
+.nav-link:hover::after {
+  width: 100%;
+}
+
+/* Floating Animation */
+
+@keyframes float {
+
+  0% {
+    transform: translateY(0px);
+  }
+
+  50% {
+    transform: translateY(-6px);
+  }
+
+  100% {
+    transform: translateY(0px);
+  }
+
+}
+
+.float {
+  animation: float 3s ease-in-out infinite;
+}
+@keyframes slideIn {
+  from {
+    transform: translateX(120%);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+/* ================= CONTACT MAP ================= */
+
+.contact-map-section {
+  padding: 80px 8%;
+  background: #fff9f5;
+}
+
+
+.contact-map-heading {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+
+.contact-map-icon {
+  font-size: 38px;
+  color: #c98b6b;
+  margin-bottom: 15px;
+}
+
+
+.contact-map-heading h2 {
+  font-size: 38px;
+  color: #5b3a29;
+  margin-bottom: 15px;
+}
+
+
+.contact-map-heading p {
+  max-width: 650px;
+  margin: auto;
+  color: #777;
+  line-height: 1.7;
+}
+
+
+.contact-map-box {
+  overflow: hidden;
+  border-radius: 25px;
+  box-shadow: 0 15px 35px rgba(0,0,0,0.12);
+}
+
+
+.contact-map-box iframe {
+  width: 100%;
+  height: 420px;
+  border: 0;
+}
+
+
+
+/* ================= CONTACT FAQ ================= */
+
+
+.contact-faq-section {
+  padding: 90px 8%;
+  background: #ffffff;
+}
+
+
+.contact-faq-container {
+  max-width: 900px;
+  margin: auto;
+}
+
+
+.contact-faq-title {
+  text-align: center;
+  margin-bottom: 45px;
+}
+
+
+.contact-faq-title h2 {
+  font-size: 38px;
+  color: #5b3a29;
+}
+
+
+.contact-faq-title p {
+  color: #777;
+  margin-top: 10px;
+}
+
+
+
+.faq-card {
+  background: #fff9f5;
+  border-radius: 18px;
+  margin-bottom: 15px;
+  overflow: hidden;
+  transition: .3s;
+}
+
+
+.faq-question {
+
+  width:100%;
+  padding:22px 25px;
+
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+
+  background:none;
+  border:none;
+
+  cursor:pointer;
+
+  color:#5b3a29;
+  font-size:17px;
+  font-weight:600;
+
+}
+
+
+.faq-arrow {
+  transition:.3s;
+}
+
+
+.faq-arrow.active {
+  transform:rotate(180deg);
+}
+
+
+.faq-answer {
+
+  padding:0 25px 20px;
+
+  color:#777;
+  line-height:1.7;
+
+}
