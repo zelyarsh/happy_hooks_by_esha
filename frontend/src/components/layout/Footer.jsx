@@ -31,11 +31,11 @@ function Footer() {
             <div className="space-y-3.5 pt-2 text-sm">
               <p className="flex items-center gap-3 hover:text-pink-400 transition-colors">
                 <FaMapMarkerAlt className="text-pink-400 shrink-0" />
-                <span>Gujrat, Pakistan</span>
+                <span>Lahore, Pakistan</span>
               </p>
               <p className="flex items-center gap-3 hover:text-pink-400 transition-colors">
                 <FaPhoneAlt className="text-pink-400 shrink-0" />
-                <span>+92 300 1234567</span>
+                <span>+92 346 4815475</span>
               </p>
               <p className="flex items-center gap-3 hover:text-pink-400 transition-colors">
                 <FaEnvelope className="text-pink-400 shrink-0" />
